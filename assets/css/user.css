@@ -1,0 +1,23 @@
+*{
+  margin: 0;
+  padding: 0; 
+}
+h1, h2, h3, h4, h5, h6, p{
+  font-family: Arial, Helvetica, sans-serif;;
+}
+header{
+  height: 100vh;
+  background: linear-gradient(to bottom right, #f75a56, #ef7da0);
+}
+.navbar{
+  margin: 0;
+  opacity: 1;
+  background: linear-gradient(to bottom right, #f75a56, #ef7da0);
+}
+.navbar-default .navbar-link{
+  color: #fff;
+  font-size: 25px;
+}
+.navbar-default .navbar-toggle .icon-bar{
+  background-color: #111;
+}
