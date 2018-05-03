@@ -6,10 +6,24 @@ h1, h2, h3, h4, h5, h6, p{
   font-family: Arial, Helvetica, sans-serif;
   margin: 0;
 }
-header{
-  height: 100vh;
-  background: linear-gradient(to bottom right, #663287, #ca0e59);
+hr{
+  margin: 0;
 }
+header{
+  background: linear-gradient(45deg, #835b9c, #56f0c1);
+  background-size: 200% 200%;
+  height: 100vh;
+  animation: Gradient 5s linear infinite alternate;
+}
+@keyframes Gradient {
+  from {
+    background-position: 0% 100%;
+  }
+  to {
+    background-position: 100% 0%;
+  }
+}
+
 .navbar{
   margin: 0;
   opacity: 0.8;
@@ -53,4 +67,23 @@ header{
   .content1{
     display: none;
   }
+}
+#product{
+  display: flex;
+  border-bottom: 2px groove #fff; 
+}
+.panel{
+  /*margin: 0.5%;*/
+  /*width: 24%;*/
+  padding: 0;
+  box-shadow: 0 8px 8px 0 rgba(0, 0, 0, 0.2), 0 8px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.panel-heading>a>img{
+  width: 80%;
+  height: width;
+  padding-left: 25%;
+}
+.panel-body{
+  background: #68b5b2;
+  color: #000;
 }
