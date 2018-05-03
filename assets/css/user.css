@@ -70,20 +70,22 @@ header{
   .content1{
     display: none;
   }
+  #outer{
+    width: 400px;
+  }
+  #image img, figcaption{
+    margin: 0;
+  }
 }
 #product{
   display: flex; 
-  border-bottom: 2px groove #fff; 
 }
 .panel{
-  /*margin: 0.5%;*/
-  /*width: 24%;*/
   padding: 0;
   box-shadow: 0 8px 8px 0 rgba(0, 0, 0, 0.2), 0 8px 20px 0 rgba(0, 0, 0, 0.19);
 }
 .panel-heading>a>img{
   width: 80%;
-  height: width;
   padding-left: 25%;
 }
 .panel-heading>a>img:hover{
@@ -110,3 +112,61 @@ header{
   background: #68b5b2;
   color: #000;
 }
+#outer{
+  width: 1000px;
+  overflow: hidden;
+  margin:auto; 
+  display:flex;
+}
+#image{
+  position: relative;
+  width: 1800px;
+  animation-name: team;
+  animation-duration: 16s;
+  animation-iteration-count: infinite;
+}
+#image img{
+  /*float: left;*/
+  width: 400px;
+  height: 400px;
+  margin: 0 10px;
+}
+figcaption{
+  margin: 10px;
+  font-size: 16px;
+  font-weight: bold;
+  color: black;
+}
+@keyframes team{
+  0%{
+    left: 0px;  
+  }
+  20%{
+    left: 0px;
+  }
+  25%{
+    left: -400px;
+  }
+  45%{
+    left: -400px;
+  }
+  50%{
+    left: -840px;
+  }
+  70%{
+    left: -840px;
+  }
+  75%{
+    left: -1280px;
+  }
+  95%{
+    left: -1280px;
+  }
+  99%{
+    left: -1700px;
+  }
+  100%{
+    left: 0px;
+  }
+}
+
