@@ -21,15 +21,15 @@
                 <div class="collapse navbar-collapse" id="navcol-1">
                     <ul class="nav navbar-nav navbar-right">
                         <li role="presentation"><a href="index.html">Home </a></li>
-                        <li role="presentation"><a href="#product">Product </a></li>
-                        <li role="presentation"><a href="#team">Team </a></li>
-                        <li role="presentation"><a href="#contact">Contact </a></li>
+                        <li role="presentation"><a href="#product" id="link1">Product </a></li>
+                        <li role="presentation"><a href="#team" id="link2">Team </a></li>
+                        <li role="presentation"><a href="#contact" id="link3">Contact </a></li>
                     </ul>
                 </div>
             </div>
         </nav>
         <div class="content">
-            <img src="assets/images/logo.png">
+            <img src="assets/images/logo1.png">
         </div>
         <div class="content1">
             <h2><span>“</span>Playing our part in Digitalization of our world <span>”</span></h2>
@@ -98,6 +98,23 @@
     <script src="assets/js/jquery.min.js"></script>
     <script src="assets/bootstrap/js/bootstrap.min.js"></script>
     <script src="assets/js/main.js"></script>
+    <script>
+        $(document).ready(function(){
+               $("#link1").click(function(){
+                    $path=$("#product").height();
+                    console.log($path);
+                    $("html").animate({scrollTop:$path},1000);
+               });
+               $("#link2").click(function(){
+                    $path=$("#team").offset().top;
+                    $("html").animate({scrollTop:$path},1000);
+               });
+               $("#link3").click(function(){
+                    $path=$("#contact").offset().top;
+                    $("html").animate({scrollTop:$path},1000);
+               });
+            });
+    </script>
 </body>
 
 </html>
