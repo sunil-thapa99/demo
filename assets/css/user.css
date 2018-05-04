@@ -66,17 +66,6 @@ header{
   from{opacity:0;}
   to{opacity:1;} 
 }
-@media screen and (max-height: 600px){
-  .content1{
-    display: none;
-  }
-  #outer{
-    width: 400px;
-  }
-  #image img, figcaption{
-    margin: 0;
-  }
-}
 #product{
   display: flex; 
 }
@@ -136,37 +125,57 @@ figcaption{
   font-size: 16px;
   font-weight: bold;
   color: black;
+  text-align: center;
 }
 @keyframes team{
-  0%{
-    left: 0px;  
+  0%, 20%, 100%{
+    left: 0;
   }
-  20%{
-    left: 0px;
+  25%, 45%{
+    left: -42%;
   }
-  25%{
-    left: -400px;
+  50%, 70%{
+    left: -84%;
   }
-  45%{
-    left: -400px;
-  }
-  50%{
-    left: -840px;
-  }
-  70%{
-    left: -840px;
-  }
-  75%{
-    left: -1280px;
-  }
-  95%{
-    left: -1280px;
-  }
-  99%{
-    left: -1700px;
-  }
-  100%{
-    left: 0px;
+  75%, 99%{
+    left: -126%;
   }
 }
+@media screen and (max-height: 600px){
+  .content1{
+    display: none;
+  }
+}
+/*@media screen and (max-width: 1200px){
 
+}*/
+@media screen and (max-width: 600px){
+  #outer{
+    width: 350px;
+    margin: 0 5;
+  }
+  #image img{
+    width: 300px;
+    height: 300px;
+  }
+  #image img, figcaption{
+    margin: 0;
+  }
+  #image{
+    width: 1400px;
+  }
+  @keyframes team{
+    0%, 20%, 100%{
+      left: 0;
+    }
+    25%, 45%{
+      left: -85.7%;
+    }
+    50%, 70%{
+      left: -171.42%;
+    }
+    75%, 99%{
+      left: -257.12%;
+    }
+  } 
+}
